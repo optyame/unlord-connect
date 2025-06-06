@@ -410,10 +410,10 @@
 <script>
   // Vérification stricte du statut de validation du CAPTCHA
   (function() {
-    const captchaValid = localStorage.getItem("captchaValid");
+    const captchaValid = localStorage.getItem("captchaValide");
 
     // Si le CAPTCHA n'est pas validé ou absent, rediriger immédiatement
-    if (captchaValid !== "true") {
+    if (captchaValide !== "true") {
       // Optionnellement, afficher un message de verrouillage avant la redirection
       document.body.innerHTML = "<h1>Accès interdit. Veuillez valider le CAPTCHA.</h1>";
       // Rediriger après un délai pour que l'utilisateur puisse lire le message
